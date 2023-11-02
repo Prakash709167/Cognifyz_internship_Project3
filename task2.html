@@ -1,0 +1,199 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="style2.css"> 
+	<title>Landing Page</title> 
+</head> 
+
+<body> 
+	<nav> 
+		<div class="heading">Landing Page</div> 
+		<span class="sideMenuButton"
+			onclick="openNavbar()"> 
+			☰ 
+		</span> 
+
+		<div class="navbar"> 
+			<ul> 
+				<li><a href="#Home">Home</a></li> 
+				<li><a href="#">About</a></li> 
+				<li><a href="#">Sign Up</a></li> 
+			</ul> 
+		</div> 
+	</nav> 
+
+	<!-- Side navigation bar for 
+		responsive website -->
+	<div class="sideNavigationBar"
+		id="sideNavigationBar"> 
+		<a href="#" class="closeButton"
+			onclick="closeNavbar()"> 
+			 
+		</a> 
+		<a href="#">Home</a> 
+		<a href="#">About</a> 
+		<a href="#">Sign Up</a> 
+	</div> 
+
+	<!-- Content -->
+	<div class="line" id="Home"> 
+		<div class="side1"> 
+			<h1>"Web Developer Internship</h1> 
+			<button> 
+				<a href="https://www.cognifyz.com/">
+					Explore More 
+				</a> 
+			</button> 
+		</div> 
+		<div class="side2"> 
+			<img src= 
+"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAB+CAMAAAA9WLe4AAAA+VBMVEX///8AAAD/kU1+2Vc4tv+jo6Po6Oj7+/v4+PjV1dVYWFjOzs7/ij4PDw9MTEzr6+sfHx//jUR62FF210tz1kW6urre3t7y8vL/jkdGRkaVlZX/iz9jY2OysrIsLCzT09PHx8eMjIypqan/0rscsf91dXUzMzOEhIRtbW2/v78lJSX/8uz/l1f/waH/nGH/49XD7LQaGhqq5ZT/t5H/sIX/qXn/7ub/3cy94//d8f/M6v/w+f+a4H7X8s1ZwP+b4X+BzP/t+emM3Wuz55//y7H/1cH/om2b1v+W1P//rH+v3f9MvP9yyP+96q3l99+D2l7M77+u5pnd9NSQ4wo0AAALlUlEQVR4nO1ceUMaORQHOZVBlNsRECiHaGulx65H1VbbbWsvt9//wyyTZGZyvDmwk8SF/P7SkCFv8su78hJSKQOD/zWO3z5//VK3EAY+NnY32tbJs4JuOQwwXlobDvatN0ZNngQIIRuOmnw0aqIfxy4hjprsGzXRj/YGhbb1/OOxbonWHCcbLHatr3/rlmmt8abNMbJQk40XRk204cUuTwhSk7dGTTTh0z5AiKMmbaMmWvDSAglBavKPURP1OA4kxKiJHgTzYdREC/i4F1KTv3QLuU4Q415ITT7pFnN9AMa9gprst18bNVGDZ3Dca9REF4LjXlFNdo2ayEdY3AuoyYlRE9mIduqsmlivTW4iFVFxL6AmxnDJxNflVMRh5LVumVcaseJeBu03umVeacSNe31YptIrE/HjXqIfltndkoql4t6FA3lugizJWMqHWG91i7v6WCbutV7olnYNED/ube8b96EAseNe4z7UIG7ca33VLemaIGbca33ULei6IFbc29432aAyxDBZxn2oRHTca5ndK5k4u76+oP+PjHuN+5CKz6NsdnRONUTEve1d4z5kwuEjm31PtYTHvbsnxn3IxD3iI5ulmkLjXuM+5MLlg7ZZYXGvcR9ycUb4yI4+U62BhBj3IRkeH9nsNdUcFPfunpiLuVJx4fORHV367QFxr2UOM8gFzUd2dOZ/AMe91jN9oq4FGD6y2e/+J1Dc294w7kMuzlk+6MAXiHv3/zHuQy4EPkb+9okY9xr3IRsCH9nsF/9TnhDjPmTjUqCDsVnPOfdhDu9KBsgHFfgyce++OekjGyAf2dG914GOe81JH+mA+aCTdT/uNQdF5aMQwEd25HXx4l5TqpWPwrdAQrxk3Y17zUFRBQjkg65SWcZ9qMJ1MB9U4HvSNgdF1SCUD79K9dLat4z7UIDrUSghfpXq+KOQnH949+uVUmHXAN9D+WCrVAKq1UztnSpJ1wNRfDBVKh6ntUwmU/uhTtrVRyQfTJWKx6+Mg/pPdfKuOu4j+WCqVByuaoiQTFWhxCuO0ADLVZHAp28zhJAbhSKvNt7H0JDRRcDDP+uEkEz9VKnUK4zLbAxGvgQ8fFPNeIwYN5IQCmfvv40iSPkGP/rBU5CF0fqlVuzVxuXZlwUpwawwx+B93PkKsmDE5IfJ4vLi83U2gBSqSkWjlqFRf1As8RqgcH7/HSQFTNZPWUIy9Q+q5V0PnN+/F0gBk/UMD+NGpOGS8/RQ4HtV4wmpPSE30pwNc7lct1TRLUhyuLz4cu16esir3woakqlfqRcTQqOT9jE+0CVGqQ8c7JyNe+n0vPTY77y4/74gZQQkIj/rIiFPw43YaQ6Tvg4xKuXF0PzIQ1em4h988/kZFPXeVAFCqrd/ME4yaPB0OOj8yfs/EnM0MmMyi3ueRM2kh/sAKcjCjdwlPdCSOIT4WODRNuKxaOJxh1RT4cgT5yjx8e4gBXGM1u/Eh1oCxYn7xtt2o1TqdwfemuwrFgUgZNuVrTNIXGMLQojlWS2NNxSKO+SVcy2vLT8mVku1MGU0bN5vIMa0K2U0PimkCNFY0CX6MWVbmz2n8VC1MEhFGlTDnGcoSQTRkdFZ0D0MMk6H8iYiDLNGi/qvJNOXiUkh7UY07cTPguOXJpQRKMYUuQ9JX34b4NIJJI0aAczHpp7Bo4Fcek7Od4NJoW43khOimqeFskSLBSaFtBvRUdBFfOwt80S+2Wy2QnsUF13yESFqq3lQasYIY5fU3wKPkL4BSSHtRtRvocyWe+G87WYoh7OALqUpjovS86mwHZbvpctOY8UmyV7PFrYxbTrWLmBCDlJkagsdUNitdNkJzCo9ILfdDuTk3wgF0eJGOsv4zPwW86qQneszczLhbA1KeFKFMd1nzE4YiqpsSjgfvXwKPSkMOiSLapyGEOiAIhVEx7kgJHIjup+DHP+qE2F5C1swY/rTAmrql9kuZSbAQ4NsoT+F7c5t7OKFhYBUcubn9CwGAa/zIyzm9YyW4oIu3qmItyMBrT82WC4CJmOPUoAiOGFsskMRMuX7HZFtX06wmfsSA/Dbg5ZbDIOVUe5G0L5EPJfu8rFlN/rdqbvbwuiIuyV2mJvNcq6yUN9OEdKxu13btYBz6jsoQpr81A6J0eNUBLk1tM8w2KaB3d1WwPs8xFGQjOqCLrIK4+h+3pbS2GWgv0MWrQ9CgWeziYnzt2Q8Qmyik0WypimrQhGSas1mePUvCJ41Gk1PDEayTdQEbClgvoN8ekRS6EFtQRdZBTtGx4Ko/vh9/YfxJkeZmpk8jre8sMglhIqT8EOU0aQJccA/MGE4d4DWAbAJOuAfZfA7hksnRktlQXcsvF4AbIEP14d6KxAbLMaGtVCTF8QRQpjQq8FqVSQhfV5FKqhBLDj3uS/mEJUU0jqi0I3EJiQN2DY83a5BbwKUEX/rKg0mhFvMewxnkYTg/pTISBEmgsBYuCAHEiMp9KGyoDuIabKwZeHzc6Q2rtMe0P942KMHwIRwGWWXXfKRhGyy/QvQOkgRfS0HvtCr+AqitKCLpjRGzQPuV6FtFpp6oYzUpdc/JoTbV84zShRNCPZdXOQgCDyFhvIRXCkEoc6NNGB9F9ABZzvVo2YLzYCQKVbo+Sqyc083elMXTUiToWAOGt0ZY01FxEoKaR1RVYdogqZIxESYFoSOb4JaASYCDeBGuRAh3H5uNCE4rCIczGgl9YCXQYjmL0eHSjeShpc+jzK4/LFhwE8jy9MTnzyinkyIENpS+kkhDbR+doJfJ25SSKmIqoIuWm3RqfofEkI4SIgQHBuiSGETNJTjcAcSPymkoGoLBUfrkQWgMJPVR3+2GMvuIy2BkJanIkgAPinsRql9/KSQUhFVu4xoOiLd+iH8ikfUbIFrlY2hkiIkNSAqUoE+zUc5kNS75RVE3ZEHHDZGpSI2tBLJq5N/4LB3KIWQIlGRKWRw0SoJO+O4TFK4QLVardXq6g4F4epEP7zTAbj+0ULdpv8RVG0ihRDcy8YfconmITgIjZhJIeKhVvv17tWPh98Kd0+wFwHdyGbX2/RLAyqCDYYb7B9Alhub8+QJwc1Ib+fsB1glw0puhVAFQfpQq9ert6/uHq5+6riXQAodgrVx6tdeigIdTpnQFouYCja2wTZNBiHeBQVOJpxYhRYU4OOjhIfa7c2/pw9aePBB6kodNj/Ei9tzLrgPlRKTSwJ+C6mYUJO36U5a8oSk3AoZlxTGiFHYW9DIMNXVG6YwFN3z/lNvebeGpM0jhFi2LbcLMUb0u5OS9pQQ23Jc7mQiiRD3QgtbMcc1mvCStHM8jhgmzIMewxQG/zrCfGx3G7mp9z81e+6Rg940N7S98yC0VrXcxu1BbjjA9DRlEeLqNRNoYMNa7u34mO8JD1/dZm5v7k6fHg8U4AM06TntEQZAB3ZyhSL4wjH1ZBGCVZZJNwIOUTxmQrSDP5uDwO0RCdfetvldyTx37KRBbD1Zxrh2wQfPaGSv4ocIocK5QEKwPjIxxGYahIaLeUkgx1NyKMTyLUaRjqDYkj5LtZ13OXCnZAIt2A4zaWhSqdhhK2iND9AQrHwwIbFe/ymiP/Y52RqCe/LFIfEevWnA/lehi3vM8b1qJplPVfbSE2HPr7iVPqK+rDFnHPXiU9ELpLxDd2xjF9Dzoz7w9P8GlVKj2+32Q6/pFCuViN8VaFUq7opnKoZJAiUiITvsBjCYmnqSgE7MGbCw98a8ncOHIyTcixNOAxkIcPLAOVdMRet4qdsnMYE0L+gYtQECWrMTJsbEyaGEX03BAW70WYC1xgBHNX4wjC9WS7lZjfbYY51JXmeQy1U7dqnSauUb5Gx78j+H4W78J/7DJysH/0difJRl2BUgKTSAIFyxSe/J4ANMCg0glCYsH3IumKNNNeDIkQGAkn/N8MiWtK2HkhA5v0azkmg2crY9nEn83UZbTnJj8GgUnmKE9R862+1KLftCdgAAAABJRU5ErkJggg=="
+				width="500"> 
+		</div> 
+	</div> 
+
+	<section class="about" id="My Projects"> 
+		<div class="content"> 
+			<div class="title"> 
+				<span>Courses</span> 
+			</div> 
+			<div class="boxes"> 
+				<div class="box"> 
+					<div class="topic"> 
+						<a href="" target="_blank"> 
+							DSA 
+						</a> 
+					</div> 
+					<p> 
+						The term DSA stands for Data 
+						Structures and Algorithms. As 
+						the name itself suggests, it 
+						is a combination of two 
+						separate yet interrelated 
+						topics. 
+					</p> 
+				</div> 
+				<div class="box"> 
+
+					<div class="topic"> 
+						<a href="" target="_blank"> 
+							HTML 
+						</a> 
+					</div> 
+					<p> 
+						HTML stands for HyperText 
+						Markup Language. It is used 
+						to design web pages using 
+						the markup language. 
+					</p> 
+				</div> 
+
+				<div class="box"> 
+					<div class="topic"> 
+						<a href="" target="_blank"> 
+							Javascript 
+						</a> 
+					</div> 
+					<p> 
+						JavaScript (JS) is the most 
+						popular lightweight, interpreted 
+						compiled programming language. 
+					</p> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+
+	<section class="contact" id="contact"> 
+		<div class="content"> 
+			<div class="title"><span>Sign Up</span></div> 
+			<div class="contactMenu"> 
+				<div class="input1"> 
+					<div class="label1">Your Name</div> 
+					<div class="input2"> 
+						<input type="text"
+							placeholder="Enter your Name here"> 
+					</div> 
+					<div class="label1"> 
+						<label>Your Email</label> 
+					</div> 
+					<div class="input2"> 
+						<input type="text"
+							placeholder="Enter your Email here"> 
+					</div> 
+					<div class="label1"> 
+						<label>Your Password</label> 
+					</div> 
+					<div class="input2"> 
+						<input type="text"
+							placeholder="Enter your Password here"> 
+					</div> 
+					<div class="button"> 
+						<button>Sign Up</button> 
+					</div> 
+				</div> 
+				<div class="input3"> 
+					<div class="rightside1"> 
+						<div class="title1"> 
+							<span> 
+								Contact Us 
+							</span> 
+						</div> 
+						<div class="content1"> 
+							A-143, 9th Floor, Sovereign 
+							Corporate Tower, Sector-136, 
+							Noida, Uttar Pradesh - 201305 
+						</div> 
+						<div class="title1"> 
+							<span>More Information</span> 
+						</div> 
+						<div class="content1"> 
+							Greetings to all the Geeks out there! 
+							We welcome you to the platform where we 
+							consistently strive to offer the best 
+							of education. This platform has been 
+							designed for every geek wishing to 
+							expand their knowledge, share their 
+							knowledge and is ready to grab their 
+							dream job. We have millions of articles, 
+							live as well as online courses, thousands 
+							of tutorials and much more just for the 
+							geek inside you.Thank you for choosing 
+							and supporting us! 
+						</div> 
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+	<!-- Footer section -->
+	<footer> 
+		<div class="footer"> 
+			<span> 
+				Created By 
+				<a href="https://www.geeksforgeeks.org/"
+					target="_blank"> 
+					Prakash Kumar 
+				</a> 
+			</span> 
+		</div> 
+	</footer> 
+	<script>
+        function openNavbar() { 
+	document.getElementById("sideNavigationBar") 
+		.style.width = "50%"; 
+} 
+function closeNavbar() { 
+	document.getElementById("sideNavigationBar") 
+		.style.width = "0%"; 
+}
+
+    </script> 
+</body> 
+
+</html>
